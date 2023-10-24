@@ -1,4 +1,4 @@
-# React Vite starter
+# P5+Typescript starter
 
 Simple starter for getting up and running with P5 and Typescript. Uses Vite for bundling and development.
 
