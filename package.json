@@ -1,5 +1,5 @@
 {
-    "name": "web-starter",
+    "name": "p5-ts-starter",
     "private": true,
     "version": "0.0.1",
     "type": "module",
@@ -7,10 +7,6 @@
         "dev": "vite",
         "build": "tsc && vite build",
         "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-        "test": "vitest run",
-        "test:watch": "vitest:watch",
-        "e2e": "cypress open --e2e --browser chrome",
-        "e2e:run": "cypress run",
         "preview": "vite preview",
         "format": "prettier --write \"src/**/*.{ts,tsx,css,scss,json}\" \"index.html\"",
         "format:check": "prettier --check \"src/**/*.{ts,tsx,css,scss,json}\" \"index.html\"",
@@ -31,26 +27,21 @@
         },
         "extends": [
             "eslint:recommended",
-            "plugin:@typescript-eslint/recommended",
-            "plugin:react-hooks/recommended"
+            "plugin:@typescript-eslint/recommended"
         ],
         "parser": "@typescript-eslint/parser",
         "parserOptions": {
             "ecmaVersion": "latest",
             "sourceType": "module"
         },
-        "plugins": [
-            "react-refresh"
-        ],
+        "plugins": [],
         "rules": {
-            "react-refresh/only-export-components": "warn",
             "@typescript-eslint/no-empty-interface": "off",
             "no-empty-pattern": "off"
         },
         "ignorePatterns": [
             "dist",
-            "node_modules",
-            "src/api"
+            "node_modules"
         ]
     },
     "commitlint": {
@@ -59,41 +50,20 @@
         ]
     },
     "dependencies": {
-        "@heroicons/react": "^2.0.18",
-        "@tanstack/react-query": "^4.35.3",
-        "axios": "^1.5.1",
-        "classnames": "^2.3.2",
-        "daisyui": "^3.8.1",
-        "formik": "^2.4.5",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "react-router-dom": "^6.16.0",
-        "react-use": "^17.4.0"
+        "@types/p5": "^1.7.1",
+        "p5": "^1.7.0"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.7.1",
         "@commitlint/config-conventional": "^17.7.0",
-        "@openapitools/openapi-generator-cli": "^2.7.0",
-        "@testing-library/react": "^14.0.0",
-        "@types/react": "^18.2.23",
-        "@types/react-dom": "^18.2.8",
         "@typescript-eslint/eslint-plugin": "^5.62.0",
         "@typescript-eslint/parser": "^6.7.3",
-        "@vitejs/plugin-react": "^4.1.0",
         "autoprefixer": "^10.4.16",
-        "cypress": "^13.3.0",
         "eslint": "^8.50.0",
-        "eslint-plugin-react-hooks": "^4.6.0",
-        "eslint-plugin-react-refresh": "^0.4.3",
-        "happy-dom": "^12.2.1",
         "husky": "^8.0.3",
-        "postcss": "^8.4.30",
         "prettier": "^3.0.3",
-        "sass": "^1.68.0",
         "standard-version": "^9.5.0",
-        "tailwindcss": "^3.3.3",
         "typescript": "^5.2.2",
-        "vite": "^4.4.9",
-        "vitest": "^0.34.5"
+        "vite": "^4.4.9"
     }
 }

@@ -1,0 +1,10 @@
+body {
+    min-height: 100dvh;
+    background: #000;
+    overflow: hidden;
+}
+
+body > canvas {
+    position: absolute;
+    inset: 0;
+}
